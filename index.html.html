@@ -1,0 +1,1601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/customStyles.css">
+  <link rel="stylesheet" href="css/customStyles2.css">
+  <link rel="stylesheet" href="css/media_screen.css">
+  <link rel="stylesheet" href="css/equities_new.css">
+  <link rel="stylesheet" href="css/banner.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;600&family=Playfair+Display&display=swap">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/slick.min.css">
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.min.css">
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/popper.js"></script>
+  <!-- <script src="scripts/view.js"></script> -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script> 
+  <script src="scripts/scroller.js"></script>
+  <script src="scripts/scroll.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="scripts/scrollpercent.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="scripts/carousel.js"></script>
+  <script src="scripts/menu_open.js"></script>
+  <script src="scripts/dropdown.js"></script>
+  <!-- <link rel="stylesheet" href="css/stackedCards.css"> -->
+  <link rel="stylesheet" href="css/chatBOT.css">
+  <script src="vanilla-tilt.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <title>Equities Electronic Trading</title>
+</head>
+          <style>
+            #progress{
+          z-index: 4;
+          height: 60px;
+          width: 60px;
+          border-radius: 50%;
+          position: fixed;
+          bottom: 35px;
+          left: 10px;
+          box-shadow: 0 0 10px rgba(0,0,0,0.2);
+          display: grid;
+          place-items: center;
+          }
+          .menu-icon
+          {
+          float: left;
+          bottom: 40px;
+          left: 18px;
+          font-size: 25px;
+          cursor: pointer;
+          color: white;
+
+
+
+          padding: 3%;
+          position: fixed;
+          z-index: 9999;
+          }
+          #progress-value{
+          display: block;
+          height: calc(100% - 16px);
+          width: calc(100% - 16px);
+          background-image: radial-gradient(circle, #5479F7 0%, #C04BE2 120.19%);
+          border-radius: 50%;
+          display: grid;
+          place-items: center;
+          font-weight: 600;
+          font-size: 20px;
+          }
+
+          </style>
+<body>
+  <div class="desk">
+    <div class="BNcontainer " id="my-menu" > 
+      <nav class="bottom_nav" id="bnav" data-back-top-btn> 
+         
+          <a href="about.html"> 
+             About Us
+          </a> 
+          <a href="index.html#finvedic"> 
+            Why FinVedic
+        </a> 
+          <a href="index.html#courses"> 
+              Courses
+          </a> 
+        <a href="master.html"> 
+          Master Classs
+      </a> 
+      <a href="index.html#CertificateValidaion"> 
+        Certificate Validation
+    </a> 
+          <a href="contact.html"> 
+              Contact Us
+          </a> 
+      </nav> 
+  </div>
+  <!-- navbar section  data-->
+  <nav class="navbar navbar-expand-md navbar-dark pt-3" style="background-color: #0A004B;">
+    <div class="container justify-content-center">
+      <a href="index.html" class="navbar-brand d-none d-md-block px-2">
+        <img src="assets/banner/Logo.svg" style="cursor: pointer;" alt="Logo" width="85" height="85">
+    </a>
+      <div class="collapse navbar-collapse d-none d-md-block" id="navbarNav">
+        <div class="mx-auto"></div>
+        <ul class="navbar-nav ">
+          <li class="nav-item mx-2">
+            <a class="nav-link text-white" href="about.html">About Us</a>
+          </li>
+  
+          <li class="nav-item mx-2">
+            <a class="nav-link text-white" href="index.html#finvedic">Why FinVedic</a>
+          </li>
+          <li class="nav-item mx-2 dropdown">
+            <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Courses
+            </a>
+            <div class="dropdown-menu custom-dropdown"  aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="fintech.html">Fintech & Financial Service Landscapes</a>
+              <a class="dropdown-item" href="discruptive.html" >Disruptive Technologies</a>
+              <a class="dropdown-item dropdown-toggle" href="#" id="subDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Specialization (Elective)</a>
+              <div class="dropdown-menu custom-dropdown2" aria-labelledby="subDropdown">
+                <a class="dropdown-item" href="equities.html">Equities Electronic Trading</a>
+                <a class="dropdown-item" href="insurence.html">Insurance</a>
+                <a class="dropdown-item" href="wealth.html">Wealth Management</a>
+                <a class="dropdown-item" href="fx.html">FX Electronic Trading</a>
+                <a class="dropdown-item" href="analytics.html">Data & Analytics</a>
+                <a class="dropdown-item" href="payments.html">Payments</a>
+                <a class="dropdown-item" href="fixedincome.html">Fixed Income Electronic Trading</a>
+                <a class="dropdown-item" href="consumer.html">Consumer and Commercial Banking</a>
+              </div>
+          </div>
+        </li>
+
+          
+          <li class="nav-item mx-2">
+            <a class="nav-link text-white" href="master.html">Master Class</a>
+          </li>
+          
+          <li class="nav-item mx-2">
+            <a class="nav-link text-white" href="index.html#CertificateValidaion">Certificate Validation</a>
+          </li>
+        </ul>
+        <div class="mx-auto"></div>
+        <a href="contact.html" class="buttonBrochure btn rounded-pill text-white py-3" style="padding-left: 3.5%;padding-right: 3.5%;font-size: large;">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="conatiner">
+    <div class="page1 text-center pb-5">
+    
+      <div class="row pt-2">
+        <div class="star_bg"></div>
+        <h4 class="subHeading">Volume 3</h4>
+        <p class="subHeading2">The Specilization</p>
+      </div>
+      <div class="new4"></div>
+      <div class="row">
+        <h1 class="HeadingMain" style="color: #9F8BFF;">Equities<br> Electronic Trading</h1>
+      </div>
+      <div class="row my-5" style="z-index: 9;">
+        <div class="col-6">
+          <a href ="fintech.html" class="button_big">Volume-1</a>
+        </div>
+        
+        <div class="col-6">
+          <a href ="discruptive.html" class="button_big">Volume-2</a>
+        </div>
+      </div>
+      
+    </div>
+    <div class="banner" style="color:#fff">
+
+      <div class="col-11 mx-auto pt-4 ">
+        <div class="text-center">
+          <h1 class="text-center" style="margin-bottom: -1%; color: #6B54F7; font-family: 'DM Sans'; margin-top: 3%;">Our Program Highlights:</h2>
+          <img src="assets/banner/Line.png" alt="" style="padding-top: 15px;">
+          
+        </div>
+        <div class="row col-12 mx-auto" style="margin-top: -3%;">
+            
+            <div class=" col-4 bannercard">
+              <div class="innercontent">
+                <div class="row col-12">
+                  <div class="col-3">
+                    <img src="assets/banner/one.png" alt="" style="padding-top: 18px; padding-bottom: 15px;">
+                  </div>
+                  <div class="col-7" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                    <p style="color: #6B54F7; font-family: 'Roca'; font-size: 22px;">Our Curriculam</p>
+                  </div> 
+                  <div class="col-2"></div>
+                </div>
+                <h6 style="color: #fff; font-size: 20px;"> V1. Fintech & Financial Landscape</h6>
+                <h6 style="color: #fff; font-size: 20px;"> V2. Disruptive Technologies</h6>              
+                <h6 style="color: #fff; font-size: 20px;"> V3. Equity Electronic Trading:</h6>
+                <p style="padding-right: 10px; margin-top: -3%;">
+                  <ul>
+                    <li>Introduction to Equity Trading</li>
+                    <li>Fundamentals of Equity Markets</li>
+                    <li>Equity Orders and Execution</li>
+                    <li>Electronic Trading Strategies</li>
+                    <li>FIX Protocol for Exchange Connectivity</li> 
+                  </ul>
+                </p>
+              </div>
+            </div>
+
+            <div class="col-4 bannercard">
+              <div class="innercontent">
+                <div class="row col-12">
+                  <div class="col-3">
+                    <img src="assets/banner/2.png" alt="" style="padding-top: 18px; padding-bottom: 15px;">
+                  </div>
+                  <div class="col-1"></div>
+                  <div class="col-8" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                    <p style="color: #6B54F7; font-family: 'Roca'; font-size: 22px;">Our Virtual Labs</p>
+                  </div> 
+                 
+                </div>
+                 <ul style="padding-right: 10px;">
+                  <li>
+                    <span class="toggle" onclick="toggleContent(this)">Real-Time Fintech Environment</span>
+                    <span class="icon" onclick="toggleContent(this)">
+                      <img src="assets/banner/plus.png" class="toggle-icon">
+                    </span>                    
+                    <p class="hidden description para"><i>Gain hands-on experience in labs that simulate real-time fintech environments, mirroring the workflows of leading companies to make you job-ready from day one.</i></p>
+                  </li>
+                  <li>
+                    <span class="toggle" onclick="toggleContent(this)">24/7 AI Assistance</span>
+                    <span class="icon" onclick="toggleContent(this)">
+                      <img src="assets/banner/plus.png" class="toggle-icon">
+                    </span>
+                    
+                    <p class="hidden description para"><i>Benefit from round-the-clock support with an AI assistant available to clarify doubts and guide you through complex technical problems at any time.</i></p>
+                  </li>
+                  <li>
+                    <span class="toggle" onclick="toggleContent(this)">Comprehensive Software Suite</span>
+                    <span class="icon" onclick="toggleContent(this)">
+                      <img src="assets/banner/plus.png" class="toggle-icon">
+                    </span>
+                    
+                    <p class="hidden description para"><i>Work with a wide range of fintech-related softwares, NGINX, MongoDB, Kafka, Jenkins, Angular, React, Springboot, Redis.</i></p>
+                  </li>
+                  <li>
+                    <span class="toggle" onclick="toggleContent(this)">Cloud Computing Integration</span>
+                    <span class="icon" onclick="toggleContent(this)">
+                      <img src="assets/banner/plus.png" class="toggle-icon">
+                    </span>
+                    
+                    <p class="hidden description para"><i>Learn to deploy fintech solutions using top cloud services like Microsoft Azure.</i></p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="col-4 bannercardlast">
+              <div class="innercontent finalone">
+                <div class="row col-12">
+                  <div class="col-3">
+                    <img src="assets/banner/4.png" alt="" style="padding-top: 18px; padding-bottom: 15px;">
+                  </div>
+                  <div class="col-7" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                    <p style="color: #6B54F7; font-family: 'Roca'; font-size: 22px;">Certification</p>
+                  </div> 
+                  <div class="col-2"></div>
+                </div>
+               <p style="padding-right: 10px;">
+                  <ul>
+                    <li>Industry-recognized certification</li>
+                    <li>Enhanced career prospects</li>
+                    </ul>
+                </p>    
+                </div>
+                <div class="innercontent extra mt-5">
+                  
+                  <div class="row col-12">
+                    <div class="col-2">
+                      <img src="assets/banner/5.png" alt="" style="padding-top: 18px; padding-bottom: 15px;">
+                    </div>
+                    <div class="col-9" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                      <p  style="color: #6B54F7; font-family: 'Roca'; font-size: 22px;">Career Opportunities</p>
+                    </div> 
+                  </div>
+                <p style="padding-right: 10px;">
+                    <ul style="padding-right: 10px;">
+                      <li>
+                        <span class="toggle" onclick="toggleContent(this)">Placement Assistance</span>
+                        <span class="icon" onclick="toggleContent(this)">
+                          <img src="assets/banner/plus.png" class="toggle-icon">
+                        </span>                        
+                        <p class="hidden description para"><i>Get support with finding jobs and connecting with companies.</i></p>
+                      </li>
+                
+                      <li>
+                        <span class="toggle" onclick="toggleContent(this)">Expert Guidance</span>
+                        <span class="icon" onclick="toggleContent(this)">
+                          <img src="assets/banner/plus.png" class="toggle-icon">
+                        </span>
+                        
+                        <p class="hidden description para"><i>Get advice from industry experts.</i></p>
+                      </li>
+                    </ul>        
+                  </p>    
+                </div>
+            </div>  
+          </div>
+          
+          
+          <div class="row col-8 mt-5 mb-4 middlebox">
+            <img src="assets/banner/rootmap.png">
+            <!-- <div class="row"> 
+              <div class="row col-4">
+                <div class="col-3">
+                  <img src="assets/banner/one.png" alt="" style="padding-top: 90%; padding-bottom: 15px;">
+                </div>
+                <div class="col-9" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                  <p class="middlehead" style="color: #6B54F7; font-family: 'Roca'; font-size: 22px;">Your Learning Journey</p>
+                </div> 
+
+              </div>
+
+              <div class="row col-6" style="padding-top: 3%;">
+               <p style="font-size: 13px;">V1: Fintech & Financial Service Landscapes <span style="color: #D8D8D8;">(16 Sessions)</span></p>
+               <p style="font-size: 13px;">V2: Disruptive Technologies in Fintech<span style="color: #D8D8D8;">(24 Sessions)</span></p>
+               <p style="font-size: 13px;">V3: Equity Electronic Trading <span style="color: #D8D8D8;">(25 Sessions)</span></p>
+              </div>
+              <div class="row col-2">
+
+                <div class="col-3">
+                  <img src="assets/banner/middle2.png" alt="" style="padding-top: 18px; padding-bottom: 15px; width: 40px;">
+                </div>
+                <div class="col-9" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                  <p class="middlehead2" style="color: #6B54F7; font-family: 'Roca'; font-size: 15px;">Placement Preparation</p>
+                </div> 
+
+
+                <ul style="margin-left: 15%;">
+                  <li>ResumeServices</li>
+                  <li>CorporatePartnership</li>
+                  <li>MockInterviews</li>
+                  <li>MentorshipByExperts</li>
+                </ul>
+
+
+              </div>
+            
+          </div> -->
+
+
+
+      </div>
+          <div class="row col-12 mx-auto">
+            <div class=" col-4 bannercardbottom">
+             <div class="innercontent">
+              <div class="row col-12">
+                <div class="col-2">
+                  <img src="assets/banner/3.png" alt="" style="padding-top: 18px; padding-bottom: 15px;">
+                </div>
+                <div class="col-10" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                  <p  style="color: #6B54F7; font-family: 'Roca'; font-size: 22px;">Course Prerequisites</p>
+                </div> 
+               
+              </div>
+              <ul style="padding-right: 10px;">
+                  <li>
+                    <span class="toggle"  onclick="toggleContent(this)">Educational Qualifications </span>
+                    <span class="icon" onclick="toggleContent(this)">
+                      <img src="assets/banner/plus.png" class="toggle-icon">
+                    </span>
+                    
+                    <p class="hidden description para"><i>BTech, MTech, MCA, or any tech graduate</i></p>
+                  </li>
+            
+                  <li>
+                    <span class="toggle" onclick="toggleContent(this)">Programming Languages</span>
+                    <span class="icon" onclick="toggleContent(this)">
+                      <img src="assets/banner/plus.png" class="toggle-icon">
+                    </span>
+                    
+                    <p class="hidden description para"><i>Understanding of Java, Python or other similar programming languages</i></p>
+                  </li>
+            
+                  <li>
+                    <span class="toggle" onclick="toggleContent(this)">Graduation Year</span>
+                    <span class="icon" onclick="toggleContent(this)">
+                      <img src="assets/banner/plus.png" class="toggle-icon">
+                    </span>
+                    
+                    <p class="hidden description para"><i>Experienced and freshers (2023/2024/2025 passouts)</i></p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-4 bannercardbottom">
+              <div class="row col-12">
+                <div class="col-3">
+                  <img src="assets/banner/6.png" alt="" style="padding-top: 18px; padding-bottom: 15px;">
+               </div>
+                <div class="col-7" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                  <p style="color: #6B54F7; font-family: 'Roca'; font-size: 22px;">Special Feature</p>
+                </div> 
+                <div class="col-2"></div>
+              </div>
+                
+              <div class="innercontent">
+
+              <ul>
+                  <li>
+                    <span class="toggle"  onclick="toggleContent(this)">Resume Services</span>
+                    <span class="icon" onclick="toggleContent(this)">
+                      <img src="assets/banner/plus.png" class="toggle-icon">
+                    </span>
+                    
+                    <p class="hidden description para"><i>Get support with building your resume to suit the fintech markets and preparing for interviews through our mock interview sessions.</i></p>
+                  </li>
+
+                  <li>
+                    <span class="toggle" onclick="toggleContent(this)">Skill-Building Focus</span>
+                    <span class="icon" onclick="toggleContent(this)">
+                      <img src="assets/banner/plus.png" class="toggle-icon">
+                    </span>
+                    
+                    <p class="hidden description para"><i>The labs are designed to build your practical skills, ensuring you can confidently apply what you've learned in real-world fintech scenarios.</i></p>
+                  </li>      
+                  <li>
+                    <span class="toggle" onclick="toggleContent(this)">Job-Ready Training</span>
+                    <span class="icon" onclick="toggleContent(this)">
+                      <img src="assets/banner/plus.png" class="toggle-icon">
+                    </span>
+                    
+                    <p class="hidden description para"><i>The combination of theoretical knowledge and practical lab experience ensures you are fully equipped to excel in the fintech industry from day one.</i></p>
+                  </li>      
+                </ul>
+              </div>
+            </div>
+            
+            
+            <div class="col-4 bannercard3" style="margin-top: -4% !important;">
+              <div class="lastone">
+                <div class="row icontext">
+                  <div class="col-4">
+                    <a href="fintech.html"><img src="assets/banner/image1.png" alt="" style="padding-bottom: 15px; padding-left: 15px;"></a>
+                  </div>
+                  <div class="col-4">
+                    <a href="discruptive.html"><img src="assets/banner/image2.png" alt="" style="padding-bottom: 15px; padding-left: 15px;"></a>
+                  </div>
+                  <div class="col-4">
+                    <a href="equities.html"><img src="assets/banner/image3.png" alt="" style="padding-bottom: 15px; padding-left: 15px;"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="row col-4" style="margin-left:15px;">
+                  <div class="col-2">
+                    <a href="fintech.html"><img src="assets/banner/copyicon.png" alt=""></a>
+                  </div>
+                  <div class="col-9">
+                    <a href="fintech.html" style="text-decoration: none;">
+                      <p style="font-size: 18px; color: #6B54F7;">Part-1</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="row col-4" style="margin-left:15px;">
+                  <div class="col-2">
+                    <a href="discruptive.html"><img src="assets/banner/copyicon.png" alt=""></a>
+                  </div>
+                  <div class="col-9">
+                    <a href="discruptive.html" style="text-decoration: none;">
+                      <p style="font-size: 18px; color: #6B54F7;">Part-2</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="row col-4" style="margin-left:5px;">
+                  <div class="col-2">
+                    <a href="equities.html"><img src="assets/banner/copyicon.png" alt=""></a>
+                  </div>
+                  <div class="col-9">
+                    <a href="equities.html" style="text-decoration: none;">
+                      <p style="font-size: 18px; color: #6B54F7;">Part-3</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="row col-12 mx-auto" style="background: linear-gradient(90deg, #5840f6, #C04BE2, #C04BE2, #5840f6); border-radius: 50px; padding-bottom: 1px;justify-content: center;align-items: center;display: flex;">
+                <div class="col-10" style="justify-content: center;align-items: center;display: flex;">
+                  <p style="color: #FFFFFF; font-size: 20px;margin-bottom: 0%;padding-left: 0%;padding-right: 0%;">Join Us to Skyrocket your Career</p>
+                </div>
+                <div class="col-2 pb-1" style="margin-top:4px;">
+                  <a href="master.html">
+                    <img src="assets/banner/Arrow 1.png" alt="" style="background-color: #FFFFFF; border-radius: 50%; padding:25% 25% 25% 25%; width: 110%;">
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+             </div>
+          </div>
+          </div>
+      </div> 
+    
+    <div class="page2">
+      <div class="row " style="width: 100%;margin-top: 20%;margin-bottom: 20%;">
+        <div class="col-1"></div>
+        <div class="row col-5 mx-auto">
+          <div class="row">
+            <h3 class="HeadingMain2 px-5 mt-1" style="font-size: 84px;margin-left: 4%;">
+              What are<br> Equities
+            </h3>
+          </div>
+          <div class="row mt-2 px-5 ">
+            <p class="subHeading3" style="margin-left: 4%;">Equities, commonly referred to as 
+              stocks, represent ownership stakes 
+              in companies. When individuals or 
+              institutions buy shares of a 
+              company’s stock, they 
+               become partial owners of that 
+               company, entitled to a portion of its
+               profits and assets.</p>
+          </div>
+        </div>
+        <!-- <div class="col-1"></div> -->
+        <div class="col-5 text-center py-2">
+          <img src="assets/Equities/book_cover8.png" alt=""  style="width:66%;border-radius: 40px;" >
+        </div>
+        <div class="col-1"></div>
+      </div>
+    </div> 
+
+    <div class="page3">
+      <div class="row col-12 w-100 mx-auto">
+          <div class="col-1"></div>
+          <div class="col-5">
+              <p class="page3head">This volume will <br>cover:</p>
+          </div>
+          <div class="col-6"></div>  
+      </div>
+      <div class="row col-12">
+          <div class="col-4"></div>
+          <div class="row col-4">
+              <div class="row col-12 py-2">
+                  <div class="col-2 number">01</div>
+                  <div class="col-10  text">Fundamentals of Equity Markets
+                  </div>
+              </div>
+              <div class="row col-12 py-2">
+                  <div class="col-2 number">02</div>
+                  <div class="col-10  text">Comprehensive Guide to Equity Orders</div>
+              </div>
+            
+              <div class="row col-12 py-2" style="margin-bottom: 15%;">
+                  <div class="col-2 number">03</div>
+                  <div class="col-10  text">Electronic Trading Strategies</div>
+              </div>
+            
+            
+          </div>
+          <div class="col-4">
+            <div class="row col-12 py-2">
+              <div class="col-2 number">04</div>
+              <div class="col-10  text">FIX Protocol: Enhancing Exchange Connectivity</div>
+          </div>
+              <div class="row col-12 py-2">
+                  <div class="col-2 number">05</div>
+                  <div class="col-10  text">Real-World Use Cases</div>
+              </div>
+
+              <div class="row col-12 py-2">
+                <div class="col-2 number">06</div>
+                <div class="col-10  text">Use Cases and Workflows</div>
+            </div>
+          </div>
+      </div>
+ </div>
+
+
+
+
+
+    <div class="page4" style="display: flex;align-items: center;justify-content: center;flex-direction: column;">
+      <div class="row" style="width: 100%;">
+        <h2 class="HeadingMain" style="width: fit-content;font-size: 60px;margin-left: 11%;">
+          How are Equities Traded<br>
+          on Exchanges?
+        </h2>
+      </div>
+      <div class="row" style="width: 80%;display: flex;align-items: center;margin-top: 6%;">
+        <div class="col-4" style="position:relative;">
+         
+          <div class="row img_position">
+            <img src="assets/Equities/box1.png" alt="">
+          </div>
+          <div class="card finCard pt-5 pb-3 ">
+            <div class="row pt-3 mx-auto" >
+            <p class="subHeading4">
+              Equities are primarily traded<br> 
+              on stock exchanges, which<br>
+               serve as centralized<br>
+                market places where<br>
+buyers and sellers come<br>
+ together to execute trades.
+            </p>
+          </div>
+          </div>
+          
+        </div>
+        <div class="col-4" style="position:relative ;">
+          <div class="row img_position2">
+            <img src="assets/Equities/box2.png" alt="">
+          </div>
+          <div class="card finCard2 pt-5 pb-3">
+            <div class="row pt-4 mx-auto">
+            <p class="subHeading4" style="color: #EFECFF;">
+              One prominent example is<br>
+               the NASDAQ<br>
+exchange, a leading global<br> 
+electronic marketplace for<br> 
+buying and selling securities.
+            </p>
+          </div>
+          </div>
+          </div>
+        <div class="col-4" style="position:relative ;">
+          <div class="row img_position3">
+            <img src="assets/Equities/4.png" alt="">
+          </div>
+          <div class="card finCard pt-5 pb-3">
+            <div class="row pt-4 mx-auto">
+            <p class="subHeading4">
+              On exchanges like NASDAQ,<br> 
+              equity trading occurs<br>
+               through a sophisticated<br> 
+               electronic platform.
+            </p>
+          </div>
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+
+
+    <div class="page5 py-3">
+      <div class="row py-5 mx-auto" style="width: 90%;">
+        
+        <div class="col-6 leftSidePage5">
+          <div class="row">
+            <img src="assets/Equities/page5.png" alt="" width="100%">
+          </div>
+          <div class="row">
+            <h2 class="HeadingMain text-center" style="font-size: 67px;">
+              Know More
+            </h2>
+          </div>
+        </div>
+
+        <div class="col-6">
+
+
+          <div class="row" style="display: flex;align-items: center;justify-content: center;">
+            <div class="col-8 purple">
+                <h4>Listing</h4>
+                <p>Companies wishing to offer their shares to the public apply for listing on the exchange. Once approved, their shares become available for trading.</p>
+            </div>
+            <div class="col-4 text-center my-auto">
+             <img src="assets/Equities/page5.1.png" alt="" style="width:100%" >
+          </div>
+          </div>
+          <div class="horizontalLine"></div>
+          <div class="row" style="display: flex;align-items: center;justify-content: center;">
+            <div class="col-8 purple">
+                <h4>Order Placement</h4>
+                <p>Investors place buy or sell orders through their brokerage accounts. These orders specify the quantity of shares they wish to buy or sell and the price at which they are willing to transact.</p>
+            </div>
+            <div class="col-4 text-center">
+             <img src="assets/Equities/page5.2.png" alt="" style="width:60%">
+          </div>
+          </div>
+
+          <div class="horizontalLine"></div>
+          <div class="row" style="display: flex;align-items: center;justify-content: center;">
+            <div class="col-8 purple">
+                <h4>Matching Orders</h4>
+                <p>The exchange matches buy and sell orders based on price and time priority. When a buy order matches a sell order, a trade occurs.</p>
+                <!-- <p>The finance sector mobilizes savings from individuals and businesses and channels them into investments and other financial products.</p> -->
+               
+            </div>
+            <div class="col-4 text-center">
+             <img src="assets/Equities/page5.3.png" alt="" style="width:60%">
+          </div>
+          </div>
+
+          <div class="horizontalLine"></div>
+          <div class="row" style="display: flex;align-items: center;justify-content: center;">
+            <div class="col-8 purple">
+                <h4>Market Monitoring</h4>
+                <p>Throughout the trading session, the exchange continuously monitors market activity, ensuring fair and orderly trading.</p>
+               
+            </div>
+            <div class="col-4 text-center">
+             <img src="assets/Equities/page5.5.png" alt="" style="width:60%">
+          </div>
+          </div>
+
+          <div class="horizontalLine"></div>
+          <div class="row" style="display: flex;align-items: center;justify-content: center;">
+            <div class="col-8 purple">
+                <h4>Execution</h4>
+                <p>Trades are executed electronically, often within milliseconds, ensuring fast and efficient transactions.</p>
+               </div> 
+            <div class="col-4 text-center">
+             <img src="assets/Equities/page5.4.png" alt="" style="width:60%">
+          </div>
+          </div>
+
+          <div class="horizontalLine"></div>
+          <div class="row" style="display: flex;align-items: center;justify-content: center;">
+            <div class="col-8 purple">
+                <h4>Regulation</h4>
+                <!-- <p>The financial sector's future will be influenced by evolving technology, customer preferences, regulations, and global economics. </p> -->
+                <p>Exchanges are regulated entities, subject to oversight by regulatory authorities to maintain market integrity and protect investors.</p>               
+            </div>
+            <div class="col-4 text-center">
+             <img src="assets/Equities/page5.6.png" alt="" style="width:60%">
+          </div>
+          </div>
+
+          <div class="horizontalLine"></div>
+          <div class="row" style="display: flex;align-items: center;justify-content: center;">
+            <div class="col-8 purple">
+                <h4>Market Data</h4>
+                <p>Real-time market data, including stock prices, trading volumes, and order book information, is disseminated to market participants for transparency and informed decision-making.</p>
+                <!-- <p>The financial sector's future will be influenced by evolving technology, customer preferences, regulations, and global economics. </p> -->
+                <!-- <p>Exchanges are regulated entities, subject to oversight by regulatory authorities to maintain market integrity and protect investors.</p>                -->
+            </div>
+            <div class="col-4 text-center">
+             <img src="assets/Equities/page5.7.png" alt="" style="width:60%">
+          </div>
+          </div>
+
+          <div class="horizontalLine"></div>
+        </div>
+       <!-- <div class="col-1"></div> -->
+      </div>
+    </div>
+
+    <div class="page6E">
+      <div class="page6EHeading">
+      <h2 class="HeadingMain text-center mx-5 py-5 d-flex align-items-center justify-content-center" style="color: #343CFF;">Electronic<span style="color: #0D0149;"> Trading</span> </h2>
+      </div>
+    </div>
+
+    <div class="page7">
+      <div class="container">
+        <div class="row" style="width: 100%;">
+          <!-- <div class="col-1"></div> -->
+          <div class="col-6">
+            <div class="imgPage4 mx-auto py-5">
+              <img src="assets/Equities/page7.png" alt="" style="width: 70%;">
+            </div>
+          </div>
+          
+          <div class="col-6">
+            <div class="row mt-5">
+              <h3 class="HeadingMain" style="font-size: 72px;">
+                Revolutionizing Investment
+              </h3>
+            </div>
+            <div class="row">
+              <p class="subHeading3 pt-4" style="color: #ffff;font-size: 22px;">Electronic Trading stands as the backbone of <br>
+                modern investment, facilitating the seamless buying <br>
+                and selling of stocks and securities across <br> 
+                markets. Much like payments technology enables <br>
+                the transfer of monetary value, Electronic Trading<br>
+                 empowers individuals, businesses, and institutions <br>
+                 to transact in the realm of investments with<br>
+                  unparalleled speed and efficiency.
+              </p>
+            </div>
+            <div class="row pt-3">
+              <div class="col-8"></div>
+              <div class="col-4">
+                <button class="small_btn" ><a href="#page8link" style="color: #fff; text-decoration: none;">Read More</a></button>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="page8" id="page8link">
+      <div class="container">
+        <div class="row pt-5 mx-auto" style="width: 96%;" >
+         
+          <div class="col-6">
+            <div class="px-2" >
+            <h3 class="HeadingMain3" style="color: #ffff;font-size: 54px;">The Rise of <br>Electronic Trading</h3>
+          </div>
+          </div>
+        
+          <div class="col-6 my-auto" >
+            <div class="mx-3">
+            <div class="box px-2 py-4" >
+              <h5 style="font-size: 24px;">Electronic Trading, the preferred <br>investment method in today's digital age.</h5>
+            </div>
+          </div>
+          </div>
+          
+          
+        </div>
+
+        <div class="row pt-5 mx-auto" style="width: 96%;">
+          <div class="col-6">
+            <div class="px-3">
+            <img src="assets/Equities/page8.1.png" alt="" width="100%">
+          </div>
+          </div>
+          
+          <div class="col-6">
+            <div class="px-2">
+            <p class="px-2" style="font-size: 19.6px;">In today's digital age, Electronic Trading 
+               become the preferred method of investment 
+               for both institutional investors and individual
+                traders. With the proliferation of internet-
+                enabled devices and the availability of user-
+                friendly trading platforms, investors can
+                 access global markets from anywhere at any 
+                 time. Moreover, Electronic Trading fosters 
+                 collaboration and knowledge-sharing among 
+                 investors, providing access to real-time market
+                  data and research tools to inform 
+                  investment strategies.
+              </p>
+            </div>
+          </div>
+      
+        </div>
+        <div class="row pt-5 mt-5 mx-auto" style="width: 96%;">
+
+          <div class="col-6 my-auto">
+            <div class="row mx-3">
+            <div class="box px-2">
+              <h5 style="font-size: 24px;">Electronic Trading platforms 
+                democratize access to financial 
+                markets,
+                 enabling individuals to build wealth and achieve financial 
+                 independence.</h5>
+            </div>
+          </div>
+          </div>
+          
+          <div class="col-6">
+            <div class="px-3" >
+            <h3 class="HeadingMain3" style="color: #ffff;font-size: 54px;">Empowering<br> Investors</h3>
+          </div>
+          </div>
+
+
+
+          <div class="row pt-2 mt-5 mx-auto">
+          
+            <div class="col-6">
+              <div class="px-2">
+              <p class="px-2" style="font-size: 19.6px;">
+                Furthermore, Electronic Trading plays a crucial 
+              role in democratizing access to financial
+              markets and driving financial inclusion. By
+               providing individuals with the means to invest
+                in stocks and securities, these platforms 
+                empower them to build wealth and achieve
+                 financial independence. Additionally,
+                  Electronic Trading platforms offer
+                   opportunities for investors in emerging
+                    fostering economic growth and prosperity.
+                </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="px-3">
+              <img src="assets/Equities/page8.2.png" alt="" width="100%">
+            </div>
+            </div>
+
+         
+        
+        
+        </div>
+        <div class="row pt-5 mt-5 mx-auto" style="display: flex;align-items: center;width: 96%;">
+           
+          <div class="col-6">
+            <div>
+            <h3 class="HeadingMain3" style="color: #ffff;font-size: 54px;">Future Trends and<br>Innovations</h3>
+          </div>
+          </div>
+
+          <div class="col-6 my-auto">
+            <div class="row mx-2">
+            <div class="box px-3 mx-2">
+              <h5 style="font-size: 24px;">The potential of Electronic Trading,
+                from advancements in technology like
+                 AI, machine learning, and blockchain to 
+                 shape the future of investment
+                  platforms</h5>
+            </div>
+          </div>
+          </div>
+        
+          
+
+          
+
+
+        </div>
+        <div class="row pt-2 my-5 mx-auto"style="display: flex;align-items: center;width: 96%;">
+          
+
+          <div class="col-6" style="height: 100%;">
+            <div class="px-1" style="height: 100%;">
+            <img src="assets/Equities/page8.3.png" alt="" width="100%" style="height: 100%;">
+          </div>
+          </div>
+          
+          <div class="col-6">
+            <div class="px-2">
+            <p class="px-2" style="font-size: 19.6px;">As technology continues to evolve, the future of Electronic Trading holds tremendous potential for innovation and disruption. From advancements in artificial intelligence and machine learning to the integration of blockchain technology, the possibilities are endless for shaping the next generation of investment platforms. With continued innovation, Electronic Trading will continue to revolutionize the way we invest, driving growth and prosperity in the global financial ecosystem.
+                
+              </p>
+            </div>
+          </div>
+      
+          
+         
+        </div>
+      </div>
+    </div>
+    </div>
+    
+    <div class="page10">
+      <div class="footer" style="padding-top: 3%; padding-bottom: 5%;">
+        <div class="row w-25 pt-5 mt-5 mx-auto">
+          <img src="assets/banner/logo_long.svg" class="w-100"> 
+        </div>
+        <div class="row address text-center w-100">
+          <p class="text-white web_view" style="font-size: medium;line-height: 25px;letter-spacing: 2px;">RENT A DESK, Hitech City RAM SVR,<br> Plot No4/2 Sector
+            1, Madhapur,<br>HUDA Techno Enclave, HITECH City,<br>Hyderabad, Telangana-500081</p>
+            <p>
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#ffff"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-phone"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" /></svg>
+          <span style="color: #ffff;margin-right: 2%;">+91 9959888622</span>
+          <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#ffff"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg>
+          <span style="color: #ffff;">support@finvedic.com</span>
+          </p>
+        </div>
+        <div class="row text-center pb-1 w-100" style="display: flex;justify-content: center;align-items: center;">
+          <p class="web_view text-white" style="letter-spacing: 1.2px;">Follow Us
+            <a href="https://twitter.com/finvedic" target="_blank">
+              <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#ffffff"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4l11.733 16h4.267l-11.733 -16z" /><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" /></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61550787876434" target="_blank">
+              <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#ffffff"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg>
+            </a>
+            <a href="https://www.instagram.com/finvedic/" target="_blank">
+              <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#ffffff"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /><path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M16.5 7.5l0 .01" /></svg>
+            </a>
+            <a href="https://in.linkedin.com/company/finvedic" target="_blank">
+              <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#ffffff"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" /><path d="M8 11l0 5" /><path d="M8 8l0 .01" /><path d="M12 16l0 -5" /><path d="M16 16v-3a2 2 0 0 0 -4 0" /></svg>
+            </a>
+          </p>
+        </div>
+
+      </div>
+      <!-- <div class="footerStyle pb-4" id="contact">
+        <div class="row mx-auto" style="padding-top: 15%;margin-left: 5%;margin-right: 5%;padding-bottom: 10%;width: 60%;display: flex;justify-content: center;align-items: center;">
+          <div class="col-6">
+            <div class="col-8">
+              <img src="assets/logo_long_re.png" class="w-100"> 
+            </div><div class="col-4"></div>
+          </div>
+          <div class="row  col-6 mx-auto"><div class="col-4"></div>
+          
+            <div class="row mx-auto" style="width: fit-content;">
+              
+              <div class="col-12">
+                <p class="text-white web_view " style="font-size: medium;line-height: 25px;letter-spacing: 2px;">RENT A DESK, Hitech City RAM SVR,<br> Plot No4/2 Sector
+                  1, Madhapur,<br>HUDA Techno Enclave, HITECH City,<br>Hyderabad, Telangana-500081<br>
+                  <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#ffff"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-phone"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" /></svg>
+                <span style="color: #ffff;">+91 9959888622</span><br>
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#ffff"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg>
+                <span style="color: #ffff;">support@finvedic.com</span>
+                </p>
+              </div>
+              
+            </div>
+            <div class="row">
+              <div class="col-1"></div>
+              <div class="col-10" style="padding-left: 0%;">
+                <p class="web_view text-white" style="letter-spacing: 1.2px;">Follow Us
+                  <a href="https://twitter.com/finvedic" target="_blank">
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#ffffff"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4l11.733 16h4.267l-11.733 -16z" /><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" /></svg>
+                  </a>
+                  <a href="https://www.facebook.com/profile.php?id=61550787876434" target="_blank">
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#ffffff"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg>
+                  </a>
+                  <a href="https://www.instagram.com/finvedic/" target="_blank">
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#ffffff"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /><path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M16.5 7.5l0 .01" /></svg>
+                  </a>
+                  <a href="https://in.linkedin.com/company/finvedic" target="_blank">
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#ffffff"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" /><path d="M8 11l0 5" /><path d="M8 8l0 .01" /><path d="M12 16l0 -5" /><path d="M16 16v-3a2 2 0 0 0 -4 0" /></svg>
+                  </a>
+                </p>
+              </div>
+              <div class="col-3">
+               
+              </div>
+              <div class="col-3"></div>
+            </div>
+          </div>
+        </div>
+        </div> -->
+      </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+<div class="mobile">
+
+  <div id="progress">
+    <span id="progress-value"></span>
+  </div>
+  <div class="menu_body">
+    <i class="fa fa-bars menu-icon" onclick="openMenu()"></i>
+    <div id="container">
+        <div id="close" onclick="closeMenu()" style="background-color: #fff; border-radius: 10px;">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-square-rounded-x" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6B54F7" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M10 10l4 4m0 -4l-4 4" />
+                <path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z" />
+            </svg>
+        </div>
+        <ul id="menu" class="items" style="padding-left: 0 !important;display:flex;align-content: center;justify-items: center;flex-direction: column; width: 80%; background-color: #fff; border:  solid 2px #6B54F7; border-radius: 10px;">
+          <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+          <li><a href="about.html" onclick="closeMenu()">About Us</a></li>
+          <li><a href="index.html#finvedic" onclick="closeMenu()">Why FinVedic</a></li>
+          <li>
+            <a href="#courses" id="courses-link">Courses<i class="arrow down" id="courses-arrow"></i></a>
+            <ul class="dropdownn" id="courses-dropdown" style="padding-left: 0 !important;">
+                <li><a href="fintech.html" class="nav-link text-start">Fintech & Financial Service Landscapes (v1)</a></li>
+                <li><a href="discruptive.html" class="nav-link text-start">Disruptive Technologies in Fintech (V2)</a></li>
+                <li>
+                    <a href="#" class="nav-link text-start" id="subcourses-link" style="font-size: 16px !important;">Specialization (V3) <i class="arrow down" id="subcourses-arrow"></i></a>
+                   
+                </li>
+                <ul class="dropdownnn" id="subcourses-dropdown" style="padding-left: 0 !important;" >
+                  <li><a href="equities.html" class="nav-link text-start">Equities Electronic Trading</a></li>
+                  <li><a href="insurence.html" class="nav-link text-start">Insurance</a></li>
+                  <li><a href="wealth.html" class="nav-link text-start">Wealth Management</a></li>
+                  <li><a href="fx.html" class="nav-link text-start">FX Electronic Trading</a></li>
+                  <!-- <li><a href="#" class="nav-link text-start">Data & Analytics</a></li> -->
+                  <li><a href="payments.html" class="nav-link text-start">Payments</a></li>
+                  <li><a href="fixedincome.html" class="nav-link text-start">Fixed Electronic Trading</a></li>
+                  <li><a href="consumer.html" class="nav-link text-start">Conusmer & Commercial Banking</a></li>
+              </ul>
+            </ul>
+            
+
+            
+        </li>
+          <li><a href="master.html" onclick="closeMenu()">Master Class</a></li>
+          <li><a href="contact.html" onclick="closeMenu()">Contact Us</a></li>
+      </ul>
+  
+    </div>
+  </div>
+  
+  
+    
+
+  <div class="mobile_nav">
+    <img class="navbar-brand d-block d-md-none justify-content-center py-4" src="assets/logo_long_re.png">
+  </div>
+  <div class="page1 text-center">
+    
+    <div class="row">
+      <div class="star_bgMB"></div>
+      <h4 class="subHeading">Volume 3</h4>
+      <p class="subHeading2">The Specilization</p>
+    </div>
+    <div class="new4"></div>
+    <div class="row">
+      <h1 class="HeadingMain mt-4" style="color: #9F8BFF;">Equities<br>Electronic Trading</h1>
+    </div>
+    <div class="row my-5" style="width: fit-content;margin-left: 2%;">
+
+      <div class="row mb-4" style="z-index: 9;">
+        <a href ="fintech.html" class="button_big">Volume-1</a>
+      </div>
+      
+      <div class="row" style="z-index: 9;">
+        <a href ="discruptive.html" class="button_big">Volume-2</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- page2 -->
+  <div class="page2 pb-4">
+    <div class="row mx-auto pb-4" style="width: 100%;">
+      <div class="row mx-auto" style="width: 100%;">
+        <div class="row mx-auto pt-4" style="width: 100%;">
+          <h3 class="HeadingMain2" style="width: fit-content;font-size: 42px;">
+            What are<br> Equities
+          </h3>
+        </div>
+        <div class="row mt-2 mx-auto pb-3"  style="width: 100%;">
+          <p class="subHeading3">Equities, commonly referred to as stocks, represent ownership stakes in companies. When individuals or institutions buy shares of a company’s stock, they effectively become partial owners of that company, entitled to a portion of its profits and assets.</p>
+        </div>
+      </div>
+      <div class="row text-center py-2 mx-auto" style="width: 100%;">
+        <img src="assets/book_cover8.png" alt=""  style="width:100%" >
+      </div>
+    </div>
+  </div>
+<!-- Page3 -->
+<section class="page3 page3Mob mobile_view" >
+  <div class="container">
+    <div class="cont3 pt-5 pb-2">
+      <div class="row mx-auto w-100">
+          <div class="head3 head3Mob text-center">This volume will cover: </div>
+      </div>
+              <div class="row mx-auto w-100 py-2 px-3 mb-5" >
+                  <div class="col-12 subHead3 fw-bold mt-3" ><div class="num me-3 py-2">01 </div><span class="mt-2">Fundamentals of Equity Markets</span></div>
+                  <div class="col-12 subHead3 fw-bold"><div class="num me-2 py-2">02 </div><span class="mt-2">Comprehensive Guide to Equity Orders</span></div>
+                  <div class="col-12 subHead3 fw-bold"><div class="num me-2 py-2">03 </div><span class="mt-2">Electronic Trading Strategies</span></div>
+                  <div class="col-12 subHead3 fw-bold"><div class="num me-2 py-2">04 </div><span class="mt-2">FIX Protocol: Enhancing Exchange Connectivity</span></div>
+                  <div class="col-12 subHead3 fw-bold"><div class="num me-2 py-2">05 </div><span class="mt-3">Real-World Use Cases</span></div>
+                  <div class="col-12 subHead3 fw-bold"><div class="num me-2 py-2">06 </div><span class="mt-3">Use Cases and Workflows</span></div>
+             
+              </div>
+    </div>
+
+  </div>
+
+</section>
+
+  
+  <!-- page4 -->
+
+  <div class="page4 pb-5">
+    <div class="row pt-5" style="width: 100%;">
+      <h2 class="HeadingMain1 marginleft1" style="width: fit-content;font-size: 28px;">
+        How are Equities Traded
+        on Exchanges
+      </h2>
+    </div>
+    <div class="row mx-auto mt-5 FintechCards">
+    
+      <div class="row col-10 mx-auto cardFintech1">
+        
+        <div class="row col-12 pt-2 mx-auto imgdiv">
+          <img src="assets/Equities/2.png" alt="" style="width: 80%;margin-left: auto;margin-right: auto;margin-top: -10%;">
+        </div>
+        <div class="px-3 pt-5" style="height: fit-content;" >
+          <p>Equities are primarily traded<br> 
+            on stock exchanges, which 
+            serve as centralized market places where
+            buyers and sellers come 
+            together to execute trades.</p>
+          </div>
+      </div>
+
+      <div class="row col-10 mx-auto my-5 cardFintech2">
+        <div class="row col-12 mx-auto imgdiv">
+          <img src="assets/Equities/3.png" alt="" style="width: 100%;margin-left: auto;margin-right: auto;margin-top: -16%;">
+        </div>
+        <div class="px-3 pt-5">
+        <p >One prominent example is
+          the NASDAQ
+          exchange, a leading global 
+          electronic marketplace for
+           buying and selling securities.</p>
+        </div>
+      </div>
+      <div class="row col-10 mx-auto  cardFintech3" >
+        <div class="row col-12 mx-auto imgdiv">
+          <img src="assets/Equities/4.png" alt="" style="height: 100%;width: 60%; margin-left: auto;margin-right: auto;margin-top: 14%;">
+        </div>
+        <div class="px-3 pt-4">
+        <p >On exchanges like NASDAQ,
+          equity trading occurs
+          through a sophisticated
+          electronic platform.</p>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- page5 -->
+
+  <div class="page5 pb-3">
+    <div class="row pt-5 mx-auto" style="width: 100%;">
+      <div class="leftSidePage5">
+        <div class="row mx-auto">
+          <img src="assets/Equities/page5.png" alt="" width="100%">
+        </div>
+        <div class="row">
+          <h2 class="HeadingMain text-center pt-3" style="font-size: 72px;">
+            Know More
+          </h2>
+        </div>
+        <div class="row mt-5">
+          <div class="row col-12 purple">
+            <div class="row" style="display: flex;align-items: end;">
+              <!-- <div class="col-1"></div> -->
+            <div class="col-12" style="position: relative;">
+            <h4>Listing</h4>
+          </div>
+          <div class="image_listing">
+            <img src="assets/Equities/page5.1.png" alt="" style="width:100%" >
+          </div>
+        </div>
+            <p style="padding-left: 2.1%;">Companies wishing to offer their shares to the public apply for listing on the exchange. Once approved, their shares become available for trading.</p>
+         </div>
+        </div>
+        <div class="horizontalLine"></div>
+        <div class="row">
+          <div class="col-9 purple">
+            <h4>Order Placement</h4>
+            <p>Investors place buy or sell orders through their brokerage accounts. These orders specify the quantity of shares they wish to buy or sell and the price at which they are willing to transact.</p>
+        </div>
+          <div class="col-3 text-center my-auto"  style="padding-left: 0%;">
+           <img src="assets/Equities/page5.2.png" alt="" style="width:100%;" >
+        </div>
+        </div>
+        <div class="horizontalLine"></div>
+        <div class="row">
+          <div class="col-9 purple">
+            <h4>Matching Orders</h4>
+            <p>The exchange matches buy and sell orders based on price and time priority. When a buy order matches a sell order, a trade occurs.</p>
+            
+          </div>
+          <div class="col-3 text-center my-auto"  style="padding-left: 0%;">
+           <img src="assets/Equities/page5.3.png" alt="" style="width:100%">
+        </div>
+        </div>
+        <div class="horizontalLine"></div>
+        <div class="row">
+          <div class="col-9 purple">
+            <h4>Market Monitoring</h4>
+            <p>Throughout the trading session, the exchange continuously monitors market activity, ensuring fair and orderly trading.</p>
+           
+          </div>
+          <div class="col-3 text-center  my-auto"  style="padding-left: 0%;">
+           <img src="assets/Equities/page5.5.png" alt="" style="width:100%">
+        </div>
+        </div>
+        <div class="horizontalLine"></div>
+        <div class="row">
+          <div class="col-9 purple">
+            <h4>Execution</h4>
+            <p>Trades are executed electronically, often within milliseconds, ensuring fast and efficient transactions.</p>
+           </div> 
+          <div class="col-3 text-center  my-auto"  style="padding-left: 0%;">
+           <img src="assets/Equities/page5.4.png" alt="" style="width:100%">
+        </div>
+        </div>
+        <div class="horizontalLine"></div>
+
+        <div class="row">
+          <div class="col-9 purple">
+            <h4>Regulation</h4>
+            <!-- <p>The financial sector's future will be influenced by evolving technology, customer preferences, regulations, and global economics. </p> -->
+            <p>Exchanges are regulated entities, subject to oversight by regulatory authorities to maintain market integrity and protect investors.</p>               
+           
+          </div>
+          <div class="col-3 text-center  my-auto"  style="padding-left: 0%;">
+           <img src="assets/Equities/page5.6.png" alt="" style="width:100%">
+        </div>
+        </div>
+        <div class="horizontalLine"></div>
+        <div class="row">
+          <div class="col-9 purple">
+            <h4>Market Data</h4>
+            <p>Real-time market data, including stock prices, trading volumes, and order book information, is disseminated to market participants for transparency and informed decision-making.</p>
+            </div> 
+          <div class="col-3 text-center  my-auto"  style="padding-left: 0%;">
+           <img src="assets/Equities/page5.7.png" alt="" style="width:100%">
+        </div>
+        </div>
+        <div class="horizontalLine"></div>
+        <!-- <div style="border: none; border-top: 4px solid #EFECFF;"></div> -->
+
+      
+     
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- page6 -->
+<div class="page6E">
+  <div class="page6EHeading">
+  <h2 class="HeadingMain1 text-left px-3" style="color: #343CFF;font-size: 40px;">Electronic<br><span style="color: #0D0149;"> Trading:</span> </h1>
+  </div>
+</div>
+
+<!-- page7 -->
+
+<div class="page7">
+  <div class="container">
+    <div class="row my-2">
+      
+      
+      <div class="row col-12 mx-auto pb-4">
+        <div class="row mx-auto">
+          <h3 class="HeadingMain11 mx-auto pt-5" style="font-size: 34px;">
+            Revolutionizing Investment
+          </h3>
+        </div>
+        <div class="row mx-auto">
+          <p class="subHeading3 pt-3" style="color: #ffff;">
+            Electronic Trading stands as the backbone of 
+            modern investment, facilitating the seamless buying 
+            and selling of stocks and securities across 
+            markets. Much like payments technology enables 
+            the transfer of monetary value, Electronic Trading
+             empowers individuals, businesses, and institutions 
+             to transact in the realm of investments with
+              unparalleled speed and efficiency.
+          </p>
+        </div>
+        <div class="row pt-3 pb-4 mx-auto">
+          <!-- <div class="col-4"></div> -->
+
+          <div class="col-10 mx-auto text-center">
+            <button class="small_btn"><a href="#page8mob" style="color: #fff;">Read More</a></button>
+          </div>
+         
+        </div>
+      </div>
+      <div class="row col-12 mx-auto mb-5">
+        <div class="row mx-auto">
+        <div class="imgPage4">
+          <img src="assets/Equities/page7.png" alt="" >
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- page8 -->
+<div class="page8 pb-5 pt-2" id="page8mob">
+<div class="container">
+
+  <div class="row pt-4">
+    <div class="row pb-4">
+      <h3 class="HeadingMain3" style="color: #ffff;font-size: 34px;">The Rise of <br>Electronic Trading</h3>
+    </div>
+    <div class="row mx-auto pb-4">
+      <div class="box">
+        <h5>Electronic Trading, the preferred investment method in today's digital age.</h5>
+      </div>
+    </div>
+    <div class="row mx-auto pb-4">
+      <img src="assets/Equities/page8.1.png" alt="" width="100%" style="padding: 0%;">
+    </div>
+    <div class="row mx-auto" style="padding: 0%;margin: 0%;">
+      <p>In today's digital age, Electronic Trading 
+        become the preferred method of investment 
+        for both institutional investors and individual
+         traders. With the proliferation of internet-
+         enabled devices and the availability of user-
+         friendly trading platforms, investors can
+          access global markets from anywhere at any 
+          time. Moreover, Electronic Trading fosters 
+          collaboration and knowledge-sharing among 
+          investors, providing access to real-time market
+           data and research tools to inform 
+           investment strategies.</p>
+    </div>
+  </div>
+
+  <div class="row pt-5">
+    <div class="row pb-4">
+      <h3 class="HeadingMain3" style="color: #ffff;font-size: 34px;">Empowering<br> Investors</h3>
+    </div>
+    <div class="row mx-auto pb-4">
+      <div class="box">
+        <h5>Electronic Trading platforms <br>
+          democratize access to financial <br>
+          markets,
+           enabling individuals to <br>build wealth and achieve financial <br>
+           independence.</h5>
+      </div>
+    </div>
+    <div class="row mx-auto pb-4">
+      <img src="assets/Equities/page8.2.png" alt="" width="100%" style="padding: 0%;">
+    </div>
+    <div class="row mx-auto" style="padding: 0%;margin: 0%;">
+      <p>Furthermore, Electronic Trading plays a crucial 
+        role in democratizing access to financial
+        markets and driving financial inclusion. By
+         providing individuals with the means to invest
+          in stocks and securities, these platforms 
+          empower them to build wealth and achieve
+           financial independence. Additionally,
+            Electronic Trading platforms offer
+             opportunities for investors in emerging
+             markets to participate in global markets,
+              fostering economic growth and prosperity.
+        </p>
+    </div>
+  </div>
+
+  <div class="row pt-5">
+    <div class="row pb-4">
+      <h3 class="HeadingMain3" style="color: #ffff;font-size: 34px;">Future Trends and<br>Innovations</h3>
+    </div>
+    <div class="row mx-auto pb-4">
+      <div class="box">
+        <h5>The potential of Electronic Trading,
+          from advancements in technology like
+           AI, machine learning, and blockchain to 
+           shape the future of investment
+            platforms</h5>
+      </div>
+    </div>
+    <div class="row mx-auto pb-4">
+      <img src="assets/Equities/page8.3.png" alt="" width="100%" style="padding: 0%;">
+    </div>
+    <div class="row mx-auto" style="padding: 0%;margin: 0%;">
+      <p>As technology continues to evolve, 
+        the future of Electronic Trading holds tremendous potential
+         for innovation and disruption. From advancements in artificial 
+         intelligence and machine learning to the integration of blockchain technology, 
+         the possibilities are endless for shaping the next generation of investment platforms.
+          With continued innovation, Electronic Trading will continue to revolutionize the way 
+          we invest, driving growth and prosperity in the global financial ecosystem.
+          
+        </p>
+    </div>
+  </div>
+
+
+</div>
+</div>
+
+<!-- page10 -->
+<div class="footerStyle" style="margin-top: -10%;">
+<div class="col-12 col-md-4 addessStyle mobile_view pt-5">
+  <img src="assets/logo_long_re.png" class="w-50 pt-2"> 
+  <p class="text-white mobile_view" style="font-size: small;line-height: 25px;letter-spacing: 2px;padding-top: 5%;">RENT A DESK,Hitech City RAM SVR,<br>Plot No4/2 Sector
+    1,Madhapur,<br>HUDA Techno Enclave, HITECH City,<br>Hyderabad,Telangana 500081</p>
+
+    <p class="text-white pb-3 mobile_view"><span><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="18" height="18" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" /></svg></span><span style="padding-left: 2%;">+91 9959888622 </span>
+      <br><span><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="18" height="18" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg> <span style="padding-left: 2%;">support@finvedic.com</span></span></p>
+
+</div>
+<div class="col-12 mainHeading text-center text-white pt-1 mobile_view">Follow Us</div>
+
+<div class="col-12  mobile_view">
+<div class="row justify-content-around">
+  <div class="col pt-1 pb-4 mb-5 text-center icons_social">
+    <a href="https://twitter.com/finvedic" target="_blank">
+      <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#ffffff"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4l11.733 16h4.267l-11.733 -16z" /><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" /></svg>
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=61550787876434" target="_blank">
+      <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#ffffff"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg>
+    </a>
+    <a href="https://www.instagram.com/finvedic/" target="_blank">
+      <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#ffffff"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /><path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M16.5 7.5l0 .01" /></svg>
+    </a>
+    <a href="https://in.linkedin.com/company/finvedic" target="_blank">
+      <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#ffffff"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" /><path d="M8 11l0 5" /><path d="M8 8l0 .01" /><path d="M12 16l0 -5" /><path d="M16 16v-3a2 2 0 0 0 -4 0" /></svg>
+    </a>
+    
+  </div>
+  
+</div>
+
+</div>
+</div>
+<!-- <div class="page10">
+  <div class="row text-center pt-5" style="width: 100%;">
+
+    <div class="row col-6 mx-auto">
+      <button class="small_btn">Phone</button>
+      <p>+91 9959888622</p>
+    </div>
+
+    <div class="row col-6">
+      <button class="small_btn">Email</button>
+      <p>support@finvedic.com</p>
+    </div>
+    <div class="col-1"></div>
+
+      <div class="col-10 mx-auto text-center" style="padding: 0%;margin: 0%;">
+        <button class="small_btn px-5">Socail</button>
+        <h3 class="text-center" >
+          <a href="https://x.com/finvedic" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a ><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+          <a href="https://x.com/finvedic" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>
+          </h3>
+      </div>
+      
+      
+    </div>
+    <div class="col-1"></div>
+  </div> -->
+</div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const starBg = document.querySelector('.star_bg');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Remove the animate class and trigger reflow to restart the animation
+                starBg.classList.remove('animate');
+                void starBg.offsetWidth; // Trigger reflow to restart the animation
+                starBg.classList.add('animate');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    observer.observe(starBg);
+});
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const starBgMB = document.querySelector('.star_bgMB');
+  
+      const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  // Remove the animate class and trigger reflow to restart the animation
+                  starBgMB.classList.remove('animate');
+                  void starBgMB.offsetWidth; // Trigger reflow to restart the animation
+                  starBgMB.classList.add('animate');
+              }
+          });
+      }, { threshold: 0.1 });
+  
+      observer.observe(starBgMB);
+  });
+  function toggleContent(element) {
+  // Find the <li> parent of the clicked element
+  const parentLi = element.closest('li');
+
+  // Get all descriptions and icons
+  const allDescriptions = document.querySelectorAll('.description');
+  const allIcons = document.querySelectorAll('.toggle-icon');
+
+  // Close all descriptions and reset icons to plus
+  allDescriptions.forEach((desc) => desc.classList.add('hidden'));
+  allIcons.forEach((icon) => icon.src = 'assets/banner/plus.png');
+
+  // Toggle the clicked description's visibility
+  const description = parentLi.querySelector('.description');
+  const icon = parentLi.querySelector('.toggle-icon');
+
+  if (description.classList.contains('hidden')) {
+    // If the description is hidden, show it and change the icon to minus
+    description.classList.remove('hidden');
+    icon.src = 'assets/banner/minus.png';
+  } else {
+    // If the description is shown, hide it and change the icon back to plus
+    description.classList.add('hidden');
+    icon.src = 'assets/banner/plus.png';
+  }
+}
+  
+
+  </script>
+</body>
+</html>
